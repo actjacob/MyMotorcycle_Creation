@@ -34,7 +34,7 @@ namespace MyMotorcycle_Creation.Controllers
             return BadRequest();
         }
 
-        [HttpDelete("{catgoryId}")]
+        [HttpDelete("{categoryId}")]
         public ActionResult DeleteCategory([FromRoute]Guid categoryId)
         {
             Category category = _context.Categories.Find(categoryId);
